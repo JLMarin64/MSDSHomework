@@ -1,0 +1,13 @@
+---
+title: "ReadME"
+author: "Jonathan Marin"
+date: "February 5, 2018"
+output: html_document
+---
+
+The purpose of this repo is to display my HW for the Doing Data Science Class at SMU. 
+
+
+Credit for data for HW4 comes from fivethirtyeight.com. 
+
+

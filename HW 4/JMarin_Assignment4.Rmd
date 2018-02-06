@@ -1,0 +1,100 @@
+---
+
+title: "Assignment4"
+
+author: "Jonathan Marin"
+
+date: "February 5, 2018"
+
+output: html_document
+
+---
+
+ 
+
+#Question 1
+
+ 
+
+```{r setup, echo = TRUE}
+
+ 
+setwd("C:/Users/Marin Family/Desktop/Doing Data Science/Unit 4")
+ 
+
+#install.packages("fivethirtyeight")
+
+#install.packages("devtools")
+
+ 
+
+library(fivethirtyeight)
+
+ 
+
+data(college_recent_grads) 
+
+ 
+
+class(college_recent_grads)  ##already data frame
+
+ 
+
+df <- as.data.frame(college_recent_grads)
+
+ 
+
+vignette("fivethirtyeight", package = "fivethirtyeight")
+
+#https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/
+
+ 
+
+dim(df)
+
+ 
+
+ 
+
+```
+
+ 
+
+#Question 2
+
+ 
+
+```{r echo = TRUE}
+
+ 
+
+colNames <- as.array(colnames(df))
+
+colNames
+
+ 
+
+number_of_rows <- as.numeric(nrow(df))
+
+ 
+
+number_of_rows
+
+distinct_major_category <- as.data.frame(x = c(unique(df$major_category)))
+
+colnames(distinct_major_category) <- "Distinct_Major_Categories"
+
+library(sqldf)
+
+major_count <- as.data.frame(sqldf("select major_category as 'Major_Category', count(major_category) as 'Count' from df group by major_category"))
+ 
+par(las=2)
+par(mar = c(5, 15, 6, 5))
+barplot(major_count$Count, names.arg = major_count$Major_Category, col = "Red", main = "Counts of Major Categories",  xlab = "Count",  horiz = TRUE)
+
+write.csv(df, file = "college_recent_grads.csv", row.names = FALSE)
+
+
+```
+
+
