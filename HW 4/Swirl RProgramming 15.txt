@@ -1,0 +1,77 @@
+Swirl RProgramming 15
+
+> library(swirl)
+> swirl()
+> data(cars)
+> ?cars
+> head(cars)
+> plot(cars)
+> ?plot
+> plot(x = cars$speed, y = cars$dist)
+> plot(x = cars$dist, y = cars$speed)
+> plot(x = cars$speed, y = cars$dist, xlab = "Speed")
+> plot(x = cars$speed, y = cars$dist, xlab = "Speed", ylab = "Stopping Distance")
+> plot(x = cars$speed, y = cars$dist, ylab = "Stopping Distance")
+> plot(x = cars$speed, y = cars$dist, xlab = "Speed", ylab = "Stopping Distance")
+> plot(x = cars$speed, y = cars$dist, xlab = "Speed", ylab = "Stopping Distance", title = "My Plot")
+> plot(x = cars$speed, y = cars$dist, xlab = "Speed", ylab = "Stopping Distance", main = "My Plot")
+> plot(cars, main = "My Plot")
+> plot(cars, main = "My Plot", sub = "My Plot Subtitle")
+> plot(cars, sub = "My Plot Subtitle")
+> plot(cars, col = 2)
+> plot(cars, xlim = c(10, 15))
+> plot(cars, pch = 2)
+> data(mtcars)
+> str(mtcars)
+> dim(mtcars)
+> play()
+> summary(mtcars)
+> table(mtcars)
+> table(mtcars$mpg)
+> names(mtcars)
+> nxt()
+> ?boxplot
+
+
+...
+
+  |=======================================================================       |  91%
+
+| Use boxplot() with formula = mpg ~ cyl and data = mtcars to create a box plot.
+
+> boxplot(mpg ~ cyl, data = mtcars)
+Output:
+
+mtcars-boxplot.png
+
+| That's the answer I was looking for.
+
+  |=========================================================================     |  93%
+
+| The plot shows that mpg is much lower for cars with more cylinders. Note that we can
+| use the same set of arguments that we explored with plot() above to add axis labels,
+| titles and so on.
+
+...
+
+  |===========================================================================   |  96%
+
+| When looking at a single variable, histograms are a useful tool. hist() is the
+| associated R function. Like plot(), hist() is best used by just passing in a single
+| vector.
+
+...
+
+  |============================================================================  |  98%
+
+| Use hist() with the vector mtcars$mpg to create a histogram.
+
+> hist(mtcars$mpg)
+Output
+
+mtcars-hist.png
+
+| All that hard work is paying off!
+
+  |==============================================================================| 100%
+
