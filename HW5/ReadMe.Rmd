@@ -1,0 +1,20 @@
+---
+title: "ReadME"
+author: "Jonathan Marin"
+date: "February 7, 2018"
+output: html_document
+---
+
+The following objects where created:
+
+df - this contains the original data set of y2016
+misspelled - this shows the value that was mispelled that ends in yyy
+y2016 - this data is the same as df, but with the mispelled value removed
+
+y2015 - this is the original y2015 data set
+
+final - this is the merged data set by Name and Gender with counts from both
+
+GirlNames - this is the dataset that only displays Female genders
+
+GirlNames.csv - Csv file containing GirlNames dataframe
