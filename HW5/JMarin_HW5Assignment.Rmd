@@ -1,0 +1,84 @@
+---
+title: "HW5"
+author: "Jonathan Marin"
+date: "February 7, 2018"
+output: html_document
+---
+
+#Question 1
+
+```{r echo = TRUE}
+library(sqldf)
+
+setwd("C:/Users/Marin Family/Desktop/Doing Data Science/HW/HW5")
+
+df <- read.table("yob2016.txt", sep = ";")
+
+colnames(df) <- c("Name","Gender","Count")
+
+summary(df)
+dim(df)
+class(df)
+head(df)
+
+grep("yyy$", df$Name)
+
+mispelled <- df[212,]
+
+y2016 <- df[-212,]
+
+#check  --should return integer(0)
+grep("yyy$", y2016$Name)
+
+
+```
+
+
+#Question 2
+
+```{r echo = TRUE}
+
+y2015 <- read.table("yob2015.txt", sep = ",")
+
+colnames(y2015) <- c("Name","Gender","Count")
+
+tail(y2015, 10)
+
+#Interesting that all the counts are 5.  Wonder if this is a data issue. Other than that, I never heard of these Z names
+#and they sound like they are from a comic book. 
+
+#Also noticed that when you group by name alone, you add a level of duplication because several names exist for both Genders. On this join, I think it adds noise to the data if we don't join on both Name and Gender to preserve the actual counts of the name for specified genders.  
+
+final <- merge(y2015, y2016, by= c("Name", "Gender"))
+
+colnames(final) <- c("Name","Gender","2015Count","2016Count")
+
+#
+
+
+
+
+```
+
+
+#Question 3
+
+```{r echo = TRUE}
+final$Total <- final$`2015Count` + final$`2016Count`
+
+final <- final[order(-final$Total),]
+
+#Top 10 most popular names
+head(final, 10)
+
+GirlNames <- sqldf("select * from final where Gender = 'F'")
+
+head(GirlNames, 10)
+
+Output <- sqldf("select Name, Total from GirlNames")
+
+
+write.csv2(Output, file = "GirlNames.csv")
+
+
+```
