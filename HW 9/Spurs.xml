@@ -1,0 +1,343 @@
+<table cellspacing="1" cellpadding="3" class="tablehead">
+<tr class="stathead"><td colspan="15.0">SHOOTING STATISTICS</td></tr>
+<tr class="colhead">
+<td>PLAYER</td>
+<td align="right" title="Field Goals Made per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/avgFieldGoalsMade">FGM</a></td>
+<td align="right" title="Field Goals Attempted per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/avgFieldGoalsAttempted">FGA</a></td>
+<td align="right" title="Field Goals Percentage per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/fieldGoalPct">FG%</a></td>
+<td align="right" title="Three-point Field Goals Made per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/avgThreePointFieldGoalsMade">3PM</a></td>
+<td align="right" title="Three-point Field Goals Attempted per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/avgThreePointFieldGoalsAttempted">3PA</a></td>
+<td align="right" title="Three-point Field Goals Percentage per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/threePointFieldGoalPct">3P%</a></td>
+<td align="right" title="Free Throws Made per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/avgFreeThrowsMade">FTM</a></td>
+<td align="right" title="Free Throws Attempted per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/avgFreeThrowsAttempted">FTA</a></td>
+<td align="right" title="Free Throws Percentage per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/freeThrowPct">FT%</a></td>
+<td align="right" title="Two-point Field Goals Made per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/twoPointFieldGoalsMade">2PM</a></td>
+<td align="right" title="Two-point Field Goals Attempted per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/twoPointFieldGoalsAttempted">2PA</a></td>
+<td align="right" title="Two-point Field Goals Percentage per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/twoPointFieldGoalPct">2P%</a></td>
+<td align="right" title="Points Per Shot per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/scoringEfficiency">PPS</a></td>
+<td align="right" title="Adjusted Field Goal Percentage per game"><a href="//www.espn.com/nba/team/stats/_/name/sa/cat/shootingEfficiency">AFG%</a></td>
+</tr>
+<tr class="oddrow player-46-2983">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2983/lamarcus-aldridge">LaMarcus Aldridge</a>, PF</td>
+<td align="right">8.8</td>
+<td align="right">17.6</td>
+<td align="right">.501</td>
+<td align="right">0.4</td>
+<td align="right">1.4</td>
+<td align="right">.325</td>
+<td align="right">4.4</td>
+<td align="right">5.2</td>
+<td align="right">0.84</td>
+<td align="right">8.4</td>
+<td align="right">16.2</td>
+<td align="right">.516</td>
+<td align="right">1.276</td>
+<td align="right">0.51</td>
+</tr>
+<tr class="evenrow player-46-6450">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/6450/kawhi-leonard">Kawhi Leonard</a>, SF</td>
+<td align="right">5.8</td>
+<td align="right">12.3</td>
+<td align="right">.468</td>
+<td align="right">1.2</td>
+<td align="right">3.9</td>
+<td align="right">.314</td>
+<td align="right">3.4</td>
+<td align="right">4.2</td>
+<td align="right">0.82</td>
+<td align="right">4.6</td>
+<td align="right">8.4</td>
+<td align="right">.539</td>
+<td align="right">1.315</td>
+<td align="right">0.52</td>
+</tr>
+<tr class="oddrow player-46-3005">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/3005/rudy-gay">Rudy Gay</a>, SF</td>
+<td align="right">4.3</td>
+<td align="right">9.2</td>
+<td align="right">.468</td>
+<td align="right">0.7</td>
+<td align="right">2.1</td>
+<td align="right">.333</td>
+<td align="right">2.1</td>
+<td align="right">2.7</td>
+<td align="right">0.78</td>
+<td align="right">3.6</td>
+<td align="right">7.1</td>
+<td align="right">.509</td>
+<td align="right">1.244</td>
+<td align="right">0.51</td>
+</tr>
+<tr class="evenrow player-46-996">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/996/pau-gasol">Pau Gasol</a>, C</td>
+<td align="right">4.0</td>
+<td align="right">8.7</td>
+<td align="right">.464</td>
+<td align="right">0.7</td>
+<td align="right">1.7</td>
+<td align="right">.386</td>
+<td align="right">2.2</td>
+<td align="right">2.8</td>
+<td align="right">0.76</td>
+<td align="right">3.3</td>
+<td align="right">7.0</td>
+<td align="right">.483</td>
+<td align="right">1.252</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="oddrow player-46-4004">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/4004/patty-mills">Patty Mills</a>, PG</td>
+<td align="right">3.3</td>
+<td align="right">7.9</td>
+<td align="right">.423</td>
+<td align="right">1.8</td>
+<td align="right">4.8</td>
+<td align="right">.382</td>
+<td align="right">1.2</td>
+<td align="right">1.4</td>
+<td align="right">0.87</td>
+<td align="right">1.5</td>
+<td align="right">3.1</td>
+<td align="right">.487</td>
+<td align="right">1.228</td>
+<td align="right">0.54</td>
+</tr>
+<tr class="evenrow player-46-272">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/272/manu-ginobili">Manu Ginobili</a>, SG</td>
+<td align="right">3.4</td>
+<td align="right">7.7</td>
+<td align="right">.440</td>
+<td align="right">1.0</td>
+<td align="right">3.2</td>
+<td align="right">.327</td>
+<td align="right">1.6</td>
+<td align="right">1.9</td>
+<td align="right">0.86</td>
+<td align="right">2.4</td>
+<td align="right">4.5</td>
+<td align="right">.521</td>
+<td align="right">1.228</td>
+<td align="right">0.51</td>
+</tr>
+<tr class="oddrow player-46-3988">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/3988/danny-green">Danny Green</a>, SG</td>
+<td align="right">3.3</td>
+<td align="right">8.1</td>
+<td align="right">.405</td>
+<td align="right">1.7</td>
+<td align="right">4.6</td>
+<td align="right">.379</td>
+<td align="right">0.7</td>
+<td align="right">0.8</td>
+<td align="right">0.79</td>
+<td align="right">1.6</td>
+<td align="right">3.5</td>
+<td align="right">.441</td>
+<td align="right">1.109</td>
+<td align="right">0.51</td>
+</tr>
+<tr class="evenrow player-46-1015">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/1015/tony-parker">Tony Parker</a>, PG</td>
+<td align="right">3.6</td>
+<td align="right">7.7</td>
+<td align="right">.471</td>
+<td align="right">0.1</td>
+<td align="right">0.7</td>
+<td align="right">.208</td>
+<td align="right">0.9</td>
+<td align="right">1.4</td>
+<td align="right">0.67</td>
+<td align="right">3.5</td>
+<td align="right">7.0</td>
+<td align="right">.496</td>
+<td align="right">1.083</td>
+<td align="right">0.48</td>
+</tr>
+<tr class="oddrow player-46-2993874">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2993874/kyle-anderson">Kyle Anderson</a>, SF</td>
+<td align="right">3.2</td>
+<td align="right">6.1</td>
+<td align="right">.522</td>
+<td align="right">0.2</td>
+<td align="right">0.7</td>
+<td align="right">.297</td>
+<td align="right">1.5</td>
+<td align="right">2.0</td>
+<td align="right">0.74</td>
+<td align="right">3.0</td>
+<td align="right">5.4</td>
+<td align="right">.550</td>
+<td align="right">1.323</td>
+<td align="right">0.54</td>
+</tr>
+<tr class="evenrow player-46-3907497">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/3907497/dejounte-murray">Dejounte Murray</a>, PG</td>
+<td align="right">3.1</td>
+<td align="right">7.1</td>
+<td align="right">.440</td>
+<td align="right">0.1</td>
+<td align="right">0.3</td>
+<td align="right">.250</td>
+<td align="right">1.2</td>
+<td align="right">1.6</td>
+<td align="right">0.73</td>
+<td align="right">3.0</td>
+<td align="right">6.8</td>
+<td align="right">.449</td>
+<td align="right">1.059</td>
+<td align="right">0.45</td>
+</tr>
+<tr class="oddrow player-46-2994526">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2994526/bryn-forbes">Bryn Forbes</a>, SG</td>
+<td align="right">2.8</td>
+<td align="right">6.8</td>
+<td align="right">.414</td>
+<td align="right">1.2</td>
+<td align="right">3.3</td>
+<td align="right">.376</td>
+<td align="right">0.5</td>
+<td align="right">0.9</td>
+<td align="right">0.61</td>
+<td align="right">1.6</td>
+<td align="right">3.5</td>
+<td align="right">.448</td>
+<td align="right">1.087</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="evenrow player-46-6426">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/6426/davis-bertans">Davis Bertans</a>, C</td>
+<td align="right">2.2</td>
+<td align="right">5.0</td>
+<td align="right">.439</td>
+<td align="right">1.3</td>
+<td align="right">3.5</td>
+<td align="right">.371</td>
+<td align="right">0.5</td>
+<td align="right">0.7</td>
+<td align="right">0.79</td>
+<td align="right">0.9</td>
+<td align="right">1.5</td>
+<td align="right">.593</td>
+<td align="right">1.240</td>
+<td align="right">0.57</td>
+</tr>
+<tr class="oddrow player-46-2959753">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2959753/joffrey-lauvergne">Joffrey Lauvergne</a>, C</td>
+<td align="right">2.0</td>
+<td align="right">3.8</td>
+<td align="right">.531</td>
+<td align="right">0.0</td>
+<td align="right">0.1</td>
+<td align="right">.000</td>
+<td align="right">0.7</td>
+<td align="right">1.0</td>
+<td align="right">0.65</td>
+<td align="right">2.0</td>
+<td align="right">3.7</td>
+<td align="right">.548</td>
+<td align="right">1.238</td>
+<td align="right">0.53</td>
+</tr>
+<tr class="evenrow player-46-3078576">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/3078576/derrick-white">Derrick White</a>, PG</td>
+<td align="right">0.8</td>
+<td align="right">1.6</td>
+<td align="right">.480</td>
+<td align="right">0.3</td>
+<td align="right">0.5</td>
+<td align="right">.500</td>
+<td align="right">0.8</td>
+<td align="right">1.1</td>
+<td align="right">0.67</td>
+<td align="right">0.5</td>
+<td align="right">1.1</td>
+<td align="right">.471</td>
+<td align="right">1.600</td>
+<td align="right">0.56</td>
+</tr>
+<tr class="oddrow player-46-2488911">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2488911/brandon-paul">Brandon Paul</a>, SG</td>
+<td align="right">0.9</td>
+<td align="right">2.1</td>
+<td align="right">.440</td>
+<td align="right">0.3</td>
+<td align="right">0.9</td>
+<td align="right">.286</td>
+<td align="right">0.4</td>
+<td align="right">0.6</td>
+<td align="right">0.61</td>
+<td align="right">0.6</td>
+<td align="right">1.2</td>
+<td align="right">.567</td>
+<td align="right">1.193</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="evenrow player-46-2578259">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2578259/darrun-hilliard">Darrun Hilliard</a>, SG</td>
+<td align="right">0.4</td>
+<td align="right">1.4</td>
+<td align="right">.263</td>
+<td align="right">0.0</td>
+<td align="right">0.4</td>
+<td align="right">.000</td>
+<td align="right">0.4</td>
+<td align="right">0.5</td>
+<td align="right">0.86</td>
+<td align="right">0.4</td>
+<td align="right">1.0</td>
+<td align="right">.385</td>
+<td align="right">.842</td>
+<td align="right">0.26</td>
+</tr>
+<tr class="oddrow player-46-2999546">
+<td>
+<a href="http://www.espn.com/nba/player/_/id/2999546/matt-costello">Matt Costello</a>, SF</td>
+<td align="right">0.3</td>
+<td align="right">1.0</td>
+<td align="right">.333</td>
+<td align="right">0.0</td>
+<td align="right">0.0</td>
+<td align="right">.000</td>
+<td align="right">0.0</td>
+<td align="right">0.0</td>
+<td align="right">0.00</td>
+<td align="right">0.3</td>
+<td align="right">1.0</td>
+<td align="right">.333</td>
+<td align="right">.667</td>
+<td align="right">0.33</td>
+</tr>
+<tr class="total">
+<td>Totals</td>
+<td align="right">38.9</td>
+<td align="right">84.8</td>
+<td align="right">.459</td>
+<td align="right">8.7</td>
+<td align="right">24.5</td>
+<td align="right">.355</td>
+<td align="right">15.8</td>
+<td align="right">20.4</td>
+<td align="right">.775</td>
+<td align="right">30.2</td>
+<td align="right">60.4</td>
+<td align="right">.501</td>
+<td align="right">1.21</td>
+<td align="right">0.51</td>
+</tr>
+</table>

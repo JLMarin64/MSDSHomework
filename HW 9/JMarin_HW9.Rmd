@@ -1,0 +1,122 @@
+---
+title: "JMarin_HW9"
+author: "Jonathan Marin"
+date: "March 4, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Question 1 
+
+```{r HarryPotter, echo = TRUE, include = TRUE}
+
+library(rvest)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(splitstackshape)
+library(sqldf)
+library(ggplot2)
+
+#Get info from URL
+url <- 'http://www.imdb.com/title/tt1201607/fullcredits?ref_=tt_ql_1'
+
+webpage <- read_html(url)
+
+HarryPotterCrew <- html_nodes(webpage,'table.cast_list')
+
+theCrew <- html_text(HarryPotterCrew)
+
+#Getting rid of the junk
+theCrew <- gsub('\n          \n          \n ','', theCrew)
+theCrew <- gsub('^"" ','',theCrew)
+theCrew <- gsub('[:...:]','\t',theCrew)
+theCrew <- gsub('\t\t\t','\t',theCrew)
+theCrew <- gsub('             \t             \n            ','\t ', theCrew)
+theCrew <- gsub('\n                      \n\n              \n          \n      ', '\n ', theCrew)
+theCrew <- gsub('^ .*','',theCrew)
+theCrew <- gsub('^\n','',theCrew)
+theCrew <- gsub(" \n  \n  \n  ",' ',theCrew)
+theCrew <- gsub(' /  \n            ', '/',theCrew)
+theCrew <- gsub('\n  \n ','\n' , theCrew)
+theCrew <- gsub('^ ', '', theCrew)
+theCrew <- gsub('\n ', '\n', theCrew)
+theCrew <- gsub('Rest of cast listed alphabetically\t','',theCrew)
+theCrew <- gsub('Peter G\t Reed\t', 'Peter G. Reed\t', theCrew)
+theCrew <- strsplit(theCrew, '\n')
+
+theCrew <- as.data.frame(theCrew)
+
+colnames(theCrew)[1] <- "Actor"
+
+
+#Splitting the tabs I left into two columns
+theCrew <- cSplit(theCrew, "Actor", "\t")
+
+#Renaming Columns
+colnames(theCrew)[1] <- "Actor"
+colnames(theCrew)[2] <- "Character"
+
+Names <- as.data.frame(theCrew$Actor)
+
+theCrew$LastName <- gsub("^.* ","",theCrew$Actor)
+theCrew$FirstName <- gsub("\\s[^ ]+$","",theCrew$Actor, perl = TRUE)
+
+output <- sqldf("select FirstName, LastName as Surname, Character from theCrew")
+
+head(output, 10)
+```
+
+
+#Question 2
+
+```{r NBR, echo = TRUE, include = TRUE}
+library(XML)
+library(RCurl)
+library(rlist)
+#Get Info from URL
+url <- 'http://www.espn.com/nba/team/stats/_/name/sa/san-antonio-spurs'
+
+webpage <- read_html(url)
+
+tables <- readHTMLTable(url)
+
+SpurData <- as.data.frame(tables[[2]])
+
+#Create the header and assign
+header <- SpurData[1,]
+
+header <- as.matrix(header)
+
+
+colnames(SpurData) <- c(as.character(header[1,]))
+
+#Delete the first row now that we assigned the column names
+SpurData <- SpurData[-1,]
+
+#Delete the last row (totals)
+SpurData <- sqldf("select * from SpurData where PLAYER <> 'Totals'")
+
+#Split the Player from position
+SpurData <- cSplit(SpurData, "PLAYER", ",")
+
+#Rename the Columns after splitting
+SpurData<-rename(SpurData, Player = PLAYER_1)
+SpurData<-rename(SpurData, Position = PLAYER_2)
+
+#Change the Class
+SpurData$FGA <- as.numeric(SpurData$FGA)
+
+#Plot the Chart
+g <- ggplot(SpurData, aes(x=Player, y=FGA, fill = Position))
+
+g + geom_bar(stat="identity") + labs(y="Field Goals Percentage Per Game", 
+       x="Player", 
+       title="FGA per Player") +  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
+```
+
