@@ -1,0 +1,46 @@
+---
+title: "Untitled"
+author: "Jonathan Marin"
+date: "March 19, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Heading
+
+```{r, fig.width = 16, fig.height =12}
+
+library(sqldf)
+library(ggplot2)
+
+setwd("C:/Users/i64756/Desktop/Coursework/Doing Data Science/Unit 10")
+
+load(file = "N-MHSS-2015-DS0001-data-r.rda")
+
+States <- sqldf("select distinct LST from mh2015_puf")
+
+#Getting the VA Hospitals
+VA <- sqldf("select * from mh2015_puf where FACILITYTYPE LIKE '%VAMC%'")
+
+#Filtering out HI and AK
+VA <- as.data.frame(sqldf("select * from VA where rtrim(LST) not in ('AK','HI','PR')"))
+
+
+graphdata <- sqldf("select LST, count(LST) as 'Freq' from VA group by LST order by count(LST) desc")
+
+
+par(las=2)
+par(mar = c(3, 5, 5, 5))
+
+
+g <- ggplot(graphdata, aes(x=reorder(LST,-Freq), y=Freq))
+g +geom_bar(stat="identity") + labs(title = "Number of Hospitals per State", y="Number of Hospitals", x="State")+theme(axis.text.x = element_text(size = 9), axis.text.y = element_text(size = 9))+
+theme(axis.text.x = element_text(angle = 90, hjust = 1)) +  coord_flip()
+
+
+
+
+```
